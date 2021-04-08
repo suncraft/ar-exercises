@@ -9,7 +9,11 @@ puts "----------"
 @store1 = Store.find_by(id:1)
 puts @store1.name
 
+@store2 = Store.second
+puts @store2.name
 
+@store1.update(name: 'Mars')
+puts @store1.name
 
 
 
